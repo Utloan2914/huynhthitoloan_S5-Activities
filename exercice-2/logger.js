@@ -1,9 +1,7 @@
 //  MODULE TO READ AND WRITE ON LOG FILE
 import fs from 'fs';
 const LOG_FILE = "./logs.txt";
-if (!fs.existsSync(LOG_FILE)) {
-  fs.writeFileSync(LOG_FILE, '');
-}
+
 /**
  * Read the logs
  * @returns the current log file content
